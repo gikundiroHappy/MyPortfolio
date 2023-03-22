@@ -306,13 +306,60 @@ ul li {
   font-size: 3rem;
 }
 .image-cards {
-  display: flex;
-  padding-top: 2rem;
+  width: 100%;
+  padding: 50px 50px;
 }
-.image-cards img {
-  width: 22.5rem;
-  height: 20rem;
-  margin: 1rem;
+.image-cards .apps-box {
+  width: 95%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  transition: all 03s;
+  z-index: -5;
+}
+.image-cards .apps-box .apps {
+  overflow: hidden;
+}
+.image-cards .apps-box .apps img {
+  width: 350px;
+  height: 250px;
+  position: relative;
+  transition: all 0.8s ease-in-out;
+}
+.image-cards .apps-box .apps:hover img {
+  transform: scale(1.1);
+  opacity: 0.4;
+}
+.image-cards .apps-box .apps h3 {
+  position: absolute;
+  font-size: 30px;
+  font-family: mv boli;
+  opacity: 0;
+  padding-left: 120px;
+  color: orange;
+  padding-top: 20px;
+  transition: 0.3s;
+}
+.image-cards .apps-box .apps:hover h3 {
+  opacity: 1;
+}
+.image-cards .apps-box .apps p {
+  position: absolute;
+  font-size: 20px;
+  opacity: 0;
+  padding-left: 50px;
+  color: white;
+  padding-top: 80px;
+  transition: 0.3s;
+}
+.image-cards .apps-box .apps:hover p {
+  opacity: 1;
+}
+.apps {
+  background: black;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
 }
 
 /* My contact Section  */
