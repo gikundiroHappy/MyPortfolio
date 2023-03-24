@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: black;
   font-family: " Arial, sans-serif";
 }
@@ -434,6 +434,7 @@ ul li {
   background-color: white;
   font-size: 1.2rem;
   border: 1px solid rgb(182, 181, 181);
+  outline: none;
 }
 .your-email {
   padding: 0.6rem;
@@ -441,6 +442,7 @@ ul li {
   border: none;
   font-size: 1.2rem;
   border: 1px solid rgb(182, 181, 181);
+  outline: none;
 }
 .subject {
   padding: 0.6rem;
@@ -450,6 +452,7 @@ ul li {
   background-color: white;
   border: none;
   border: 1px solid rgb(182, 181, 181);
+  outline: none;
 }
 .message {
   margin: 1rem;
@@ -459,6 +462,7 @@ ul li {
   background-color: white;
   border: none;
   border: 1px solid rgb(182, 181, 181);
+  outline: none;
 }
 .name-email {
   display: flex;
@@ -486,4 +490,38 @@ button {
 }
 button:hover {
   opacity: 0.8;
+}
+footer {
+  position: relative;
+  width: 100%;
+  background-color: rgb(125, 125, 236);
+  min-height: 100px;
+  padding: 20px 50px;
+}
+.social-icons {
+  display: flex;
+}
+.social-icons li {
+  list-style: none;
+  text-align: center;
+}
+.social-icons li a {
+}
+
+/* Responsineness */
+@media screen and (max-width: 800px) {
+  .nav-bar {
+    padding-left: 90px;
+  }
+  .content {
+    width: 100%;
+    height: 80vh;
+    background-position: bottom;
+  }
+  .content h3 {
+    font-size: 28px;
+  }
+  .content p {
+    font-size: 25px;
+  }
 }
