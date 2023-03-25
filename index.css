@@ -6,6 +6,7 @@
 body {
   font-size: 1.2rem;
   color: black;
+  background-color: rgb(241, 238, 238);
   font-family: " Arial, sans-serif";
 }
 
@@ -20,7 +21,6 @@ body {
   opacity: 0.9;
   padding: 15rem 0rem 0rem 10rem;
   line-height: 1.5rem;
-  /* position: relative; */
 }
 .name h3 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -49,12 +49,20 @@ body {
 .nav-bar {
   padding-bottom: 1rem;
   position: fixed;
-  background-color: rgb(145, 143, 143);
+  background-color: rgb(129, 128, 128);
   width: 100%;
+  height: 9vh;
   z-index: 999;
-  padding-left: 25rem;
+  padding-right: 90px;
+  padding-left: 25px;
   font-size: 0.8rem;
   font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-bar img {
+  height: 60px;
+  width: 120px;
 }
 .nav-bar .nav-list {
   display: flex;
@@ -92,7 +100,7 @@ body {
 }
 .word .par {
   font-size: 5rem;
-  color: rgb(245, 244, 244);
+  color: rgb(221, 220, 220);
 }
 .word .para {
   position: absolute;
@@ -112,7 +120,6 @@ body {
 .image-box img {
   height: 85vh;
   width: 25rem;
-  /* object-fit: cover; */
 }
 .part {
   display: flex;
@@ -177,7 +184,7 @@ body {
 }
 .word-two .par-two {
   font-size: 5rem;
-  color: rgb(245, 244, 244);
+  color: rgb(221, 220, 220);
 }
 .word-two .para-two {
   position: absolute;
@@ -205,6 +212,34 @@ body {
 .education-section p {
   font-size: 1.3rem;
 }
+.circle-1 {
+  border-radius: 50%;
+  height: 3vh;
+  margin-left: -40px;
+  width: 5%;
+  border: 2px solid gray;
+}
+.line-1 {
+  position: absolute;
+  margin-left: -30px;
+  height: 24.5vh;
+  width: 2px;
+  background-color: gray;
+}
+#ordinary-line {
+  height: 13vh;
+}
+#expe-circle {
+  border-radius: 50%;
+  height: 3vh;
+  margin-left: -52px;
+  width: 5%;
+  border: 2px solid gray;
+}
+#expe-line {
+  margin-left: -40px;
+  height: 58vh;
+}
 .experience-section h1 {
   font-family: "Roboto", sans-serif;
   font-size: 2rem;
@@ -228,7 +263,7 @@ ul li {
 }
 .word-three .par-three {
   font-size: 5rem;
-  color: rgb(245, 244, 244);
+  color: rgb(221, 220, 220);
 }
 .word-three .para-three {
   position: absolute;
@@ -296,7 +331,7 @@ ul li {
 }
 .word-four .par-four {
   font-size: 5rem;
-  color: rgb(245, 244, 244);
+  color: rgb(221, 220, 220);
 }
 .word-four .para-four {
   position: absolute;
@@ -359,7 +394,6 @@ ul li {
   background: black;
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
 }
 
 /* My contact Section  */
@@ -371,7 +405,7 @@ ul li {
 }
 .word-five .par-five {
   font-size: 5rem;
-  color: rgb(245, 244, 244);
+  color: rgb(221, 220, 220);
 }
 .word-five .para-five {
   position: absolute;
@@ -491,21 +525,38 @@ button {
 button:hover {
   opacity: 0.8;
 }
+
+/* footer */
+
 footer {
   position: relative;
   width: 100%;
   background-color: rgb(125, 125, 236);
   min-height: 100px;
   padding: 20px 50px;
-}
-.social-icons {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.social-icons li {
+footer .social-icons {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+footer .social-icons li {
   list-style: none;
-  text-align: center;
 }
-.social-icons li a {
+footer .social-icons li a span i {
+  font-size: 30px;
+  color: white;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+footer .social-icons li a :hover {
+  transform: translateY(-10px);
 }
 
 /* Responsineness */
