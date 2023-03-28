@@ -246,6 +246,7 @@ body {
   margin-left: -40px;
   width: 5%;
   border: 2px solid gray;
+  background-color: gray;
 }
 .line-1 {
   position: absolute;
@@ -954,6 +955,32 @@ footer .copyright {
   }
   .html-skills {
     font-size: 28px;
+  }
+
+  /* resume page  */
+  .section {
+    display: block;
+  }
+  .education-section .level {
+    font-size: 40px;
+  }
+  .education-section p {
+    font-size: 30px;
+  }
+  .experience-section h1 {
+    margin-top: 100px;
+  }
+  .experience-section .level {
+    font-size: 40px;
+  }
+  .experience-section p {
+    font-size: 30px;
+  }
+  .experience-section ul li {
+    font-size: 30px;
+  }
+  #expe-line {
+    height: 73vh;
   }
 
   /* service page  */
