@@ -117,6 +117,9 @@ body {
 
 /* My About Section */
 
+#about {
+  margin-bottom: 100px;
+}
 .word {
   text-align: center;
   margin-top: 3rem;
@@ -221,6 +224,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding-top: 3rem;
+  margin-bottom: 100px;
 }
 
 .education-section h1 {
@@ -280,6 +284,9 @@ ul li {
 
 /* My service Section */
 
+#service {
+  margin-bottom: 100px;
+}
 .word-three {
   text-align: center;
   margin-top: 3rem;
@@ -555,33 +562,27 @@ button:hover {
 footer {
   position: relative;
   width: 100%;
-  height: 55vh;
-  background-image: url(https://images.pexels.com/photos/2528118/pexels-photo-2528118.jpeg?auto=compress&cs=tinysrgb&w=600);
+  height: 25vh;
+  background-color: rgb(229, 226, 226);
+  /* background-image: url(https://images.pexels.com/photos/2528118/pexels-photo-2528118.jpeg?auto=compress&cs=tinysrgb&w=600); */
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100px;
-  padding: 20px 50px;
-  /* display: flex; */
+  padding: 10px 0px;
   justify-content: center;
   align-items: center;
-}
-footer h3 {
-  text-align: center;
-  font-family: mv boli;
-  font-weight: bold;
-  margin-top: 20px;
 }
 footer p {
   text-align: center;
   font-size: 30px;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 footer .social-icons {
   display: flex;
   position: relative;
   justify-content: center;
-  margin: 10px 0;
+  margin: 5px 0 0 0;
   flex-wrap: wrap;
 }
 footer .social-icons li {
@@ -602,14 +603,16 @@ footer .social-icons li a :hover {
 }
 footer a .fresh i {
   background-color: orange;
+  position: absolute;
+  /* border-radius: 50%; */
   margin-left: 1200px;
-  border-radius: 2px;
+  margin-top: -60px;
+  border-radius: 50%;
   padding: 10px;
   font-size: 25px;
 }
 footer .copyright {
   font-size: 20px;
-  margin-bottom: 40px;
 }
 
 /* Responsineness */
@@ -885,311 +888,4 @@ footer .copyright {
 } */
 
 @media screen and (max-width: 800px) {
-  .nav-bar {
-    display: block;
-    /* width: 100%; */
-  }
-  .nav-bar .logo {
-    text-align: center;
-    padding-bottom: 10px;
-  }
-  .nav-bar .nav-list {
-    display: flex;
-    gap: 10px;
-  }
-  .nav-bar .nav-list .nav-link a:link,
-  .nav-bar .nav-list .nav-link a:visited {
-    font-size: 18px;
-  }
-
-  /* home page  */
-  .content .name h3 {
-    margin-top: 0;
-    width: 100%;
-    font-size: 15px;
-    margin-left: -130px;
-  }
-
-  .content .name h3::after {
-    width: 25%;
-    margin-left: 150px;
-  }
-  .content .name p {
-    width: 50%;
-    font-size: 18px;
-    margin-left: -130px;
-  }
-
-  .content {
-    width: 69.1%;
-    height: 50vh;
-    background-position: bottom;
-  }
-  .content .icons-ic {
-    margin-left: -85px;
-  }
-
-  .content .icons-ic i {
-    margin: 0 80px 0 0;
-  }
-
-  /* about page  */
-  .word .par {
-    margin-left: -380px;
-    font-size: 40px;
-    text-align: center;
-  }
-  .word .para {
-    margin-left: -430px;
-    font-size: 35px;
-    position: absolute;
-    padding-top: 20px;
-    text-align: center;
-  }
-  .both {
-    display: block;
-  }
-  .container {
-    padding-left: 60px;
-  }
-  #about {
-    font-size: 15px;
-  }
-  .both .image-box img {
-    /* width: 80%; */
-    height: 60vh;
-  }
-  .division .part {
-    display: block;
-  }
-  .division .key {
-    display: block;
-  }
-  .skills {
-    padding-top: 4rem;
-    line-height: 0.9rem;
-  }
-  .html-skills {
-    font-size: 30px;
-    display: block;
-  }
-  .bar {
-    width: 70%;
-    height: 1vh;
-    display: block;
-    background-color: rgb(221, 219, 219);
-  }
-  .bar span {
-    height: 1vh;
-    float: left;
-    background-color: orange;
-  }
-  .html {
-    width: 100%;
-    animation: html;
-  }
-  .css {
-    width: 85%;
-    animation: css;
-  }
-  .js {
-    width: 50%;
-    animation: html;
-  }
-
-  /* resume page  */
-  .word-two .par-two {
-    margin-left: -330px;
-    font-size: 40px;
-    text-align: center;
-  }
-  .word-two .para-two {
-    margin-left: -380px;
-    font-size: 35px;
-    position: absolute;
-    padding-top: 20px;
-    text-align: center;
-  }
-  .section {
-    display: block;
-    /* width: 100%; */
-  }
-  .section .education-section .section-one .level-one .level {
-    margin-left: 30px;
-  }
-  .section .education-section .section-one .level-one p {
-    font-size: 30px;
-    padding-left: 30px;
-  }
-  .section .education-section .section-one .level-one p {
-    font-size: 17px;
-    padding-left: 30px;
-  }
-  .section .education-section .section-one .level-one .circle-1 {
-    margin-left: 0px;
-    background-color: grey;
-  }
-  .section .education-section .section-one .level-one .line-1 {
-    margin-left: 13px;
-  }
-  .section .experience-section h1 {
-    margin-top: 90px;
-  }
-  .section .experience-section .section-two .level-one .level {
-    margin-left: 30px;
-  }
-  .section .experience-section .section-two .level-one #expe-circle {
-    margin-left: 0;
-    background-color: grey;
-  }
-  .section .experience-section .section-two .level-one #expe-line {
-    margin-left: 14px;
-    height: 35vh;
-  }
-  .section .experience-section .section-two .level-one p {
-    padding-left: 25px;
-    font-size: 20px;
-  }
-  .section .experience-section .section-two .level-one ul li {
-    padding-left: 25px;
-    list-style: none;
-    font-size: 17px;
-  }
-
-  /* service page  */
-  .word-three .par-three {
-    margin-left: -330px;
-    font-size: 40px;
-    text-align: center;
-  }
-  .word-three .para-three {
-    margin-left: -360px;
-    font-size: 35px;
-    position: absolute;
-    padding-top: 20px;
-    text-align: center;
-  }
-  .cards {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    /* height: 80vh; */
-  }
-  .cards .card-one {
-    width: 35%;
-    height: 35vh;
-  }
-  .cards .card-one p {
-    font-size: 20px;
-    line-height: 19px;
-  }
-
-  /* portfolio page  */
-  #portfolio {
-    margin-top: 350px;
-  }
-  .word-four .par-four {
-    margin-left: -320px;
-    font-size: 40px;
-    text-align: center;
-  }
-  .word-four .para-four {
-    margin-left: -350px;
-    font-size: 35px;
-    position: absolute;
-    padding-top: 20px;
-    text-align: center;
-  }
-  .image-cards .apps-box {
-    display: flex;
-    flex-wrap: wrap;
-    /* width: 100%; */
-  }
-  .image-cards .apps-box .apps {
-    width: 40%;
-  }
-  .image-cards .apps-box .apps p {
-    font-size: 20px;
-    padding-left: 5px;
-    text-align: center;
-  }
-
-  /* contact page   */
-  .word-five .par-five {
-    margin-left: -320px;
-    font-size: 40px;
-    text-align: center;
-  }
-  .word-five .para-five {
-    margin-left: -370px;
-    font-size: 35px;
-    position: absolute;
-    padding-top: 20px;
-    text-align: center;
-  }
-  .test {
-    display: block;
-  }
-  .test .address-section .address {
-    width: 480px;
-    height: 10vh;
-  }
-  .test .call .address {
-    width: 480px;
-    height: 10vh;
-  }
-  .send-text {
-    width: 78%;
-  }
-  .send-text .name-email {
-    display: block;
-  }
-  .send-text .name-email input {
-    width: 90%;
-  }
-  .send-text input {
-    width: 80%;
-  }
-  .send-text .message {
-    width: 80%;
-  }
-  .send-text .name-email .your-name {
-    margin-bottom: 30px;
-  }
-  .send-text button {
-    margin-left: 15px;
-  }
-  #home {
-    background-color: red;
-    /* width: 76%; */
-  }
-  #about {
-    background-color: rgb(64, 255, 0);
-    /* width: 76%; */
-    padding-left: 5px;
-  }
-  #resume {
-    background-color: rgb(242, 255, 0);
-    /* width: 76%; */
-  }
-  #service {
-    background-color: purple;
-    /* width: 76%; */
-  }
-  #portfolio {
-    background-color: blue;
-    /* width: 76%; */
-  }
-  #contact {
-    background-color: grey;
-    /* width: 76%; */
-  }
-  body {
-    background-color: black;
-    /* width: 50%;  */
-  }
-  .container {
-    padding-left: 0;
-    width: 80%;
-  }
 }
