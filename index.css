@@ -474,7 +474,7 @@ ul li {
 }
 #social i {
   background-color: white;
-  border: 1px solid grey;
+  /* border: 1px solid grey; */
   height: 2rem;
   width: 2rem;
   text-align: center;
@@ -897,12 +897,11 @@ footer .copyright {
   }
   .nav-bar .nav-list {
     display: flex;
-    gap: px;
     padding-left: 0;
   }
   .nav-bar .nav-list .nav-link a:link,
   .nav-bar .nav-list .nav-link a:visited {
-    font-size: 18px;
+    font-size: 20px;
   }
   .content {
     width: 100%;
@@ -916,8 +915,14 @@ footer .copyright {
   }
   .content .name p {
     width: 100%;
-    font-size: 35px;
+    font-size: 38px;
     line-height: 40px;
+  }
+  .name h3::after {
+    width: 50%;
+    margin-left: 280px;
+    margin-top: 10px;
+    height: 5px;
   }
   footer p {
     padding-top: 30px;
@@ -936,13 +941,19 @@ footer .copyright {
   }
 
   /* about page  */
+  #about {
+    padding-top: 40px;
+  }
+  .word .para {
+    margin-left: -310px;
+  }
   .both {
     display: block;
   }
   .both .image-box img {
-    width: 90%;
-    height: 60vh;
-    margin-top: 100px;
+    width: 100%;
+    height: 80vh;
+    margin-top: 20px;
   }
   .part {
     display: block;
@@ -958,6 +969,12 @@ footer .copyright {
   }
 
   /* resume page  */
+  #resume {
+    padding-top: 40px;
+  }
+  .word-two .para-two {
+    margin-left: -300px;
+  }
   .section {
     display: block;
   }
@@ -984,6 +1001,12 @@ footer .copyright {
   }
 
   /* service page  */
+  #service {
+    padding-top: 40px;
+  }
+  .word-three .para-three {
+    margin-left: -290px;
+  }
   .cards {
     display: flex;
     flex-wrap: wrap;
@@ -999,6 +1022,20 @@ footer .copyright {
   }
 
   /* porfolio page  */
+  #portfolio {
+    padding-top: 40px;
+  }
+  .word-four .para-four {
+    margin-left: -280px;
+  }
+  .image-cards .apps-box .apps h3 {
+    font-size: 40px;
+  }
+  .image-cards .apps-box .apps p {
+    font-size: 30px;
+    padding-left: 8px;
+    padding-top: 110px;
+  }
   .image-cards .apps-box {
     display: flex;
     flex-wrap: wrap;
@@ -1007,6 +1044,38 @@ footer .copyright {
   }
 
   /* contact page  */
+  #contact {
+    padding-top: 40px;
+    font-size: 30px;
+  }
+  .word-five .para-five {
+    margin-left: -280px;
+  }
+  .address {
+    height: 15vh;
+    width: 100%;
+  }
+  .address span i {
+    font-size: 50px;
+    padding: 10px;
+    display: inline;
+  }
+  .address #social span i {
+    font-size: 40px;
+    padding: 6px;
+  }
+  .your-name {
+    font-size: 30px;
+  }
+  .your-email {
+    font-size: 30px;
+  }
+  .subject {
+    font-size: 30px;
+  }
+  .message {
+    font-size: 30px;
+  }
   .test {
     display: block;
   }
@@ -1024,5 +1093,6 @@ footer .copyright {
   }
   .send-text button {
     margin-left: 30px;
+    font-size: 30px;
   }
 }
