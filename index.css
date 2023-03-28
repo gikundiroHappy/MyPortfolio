@@ -888,4 +888,114 @@ footer .copyright {
 } */
 
 @media screen and (max-width: 800px) {
+  .nav-bar {
+    display: block;
+  }
+  .nav-bar .logo {
+    text-align: center;
+  }
+  .nav-bar .nav-list {
+    display: flex;
+    gap: px;
+    padding-left: 0;
+  }
+  .nav-bar .nav-list .nav-link a:link,
+  .nav-bar .nav-list .nav-link a:visited {
+    font-size: 18px;
+  }
+  .content {
+    width: 100%;
+    height: 100vh;
+  }
+  .content .name {
+    margin-left: -130px;
+    font-size: 25px;
+    width: 100%;
+    margin-top: 150px;
+  }
+  .content .name p {
+    width: 100%;
+    font-size: 35px;
+    line-height: 40px;
+  }
+  footer p {
+    padding-top: 30px;
+    font-size: 40px;
+  }
+  footer .social-icons li a span i {
+    font-size: 35px;
+    margin-top: 20px;
+  }
+  footer .copyright {
+    font-size: 30px;
+    padding-top: 0px;
+  }
+  footer a .fresh i {
+    margin-left: 700px;
+  }
+
+  /* about page  */
+  .both {
+    display: block;
+  }
+  .both .image-box img {
+    width: 90%;
+    height: 60vh;
+    margin-top: 100px;
+  }
+  .part {
+    display: block;
+  }
+  .key {
+    display: block;
+  }
+  .division {
+    font-size: 35px;
+  }
+  .html-skills {
+    font-size: 28px;
+  }
+
+  /* service page  */
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100vh;
+  }
+  .card-one {
+    width: 45%;
+  }
+  .card-one p {
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  /* porfolio page  */
+  .image-cards .apps-box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* contact page  */
+  .test {
+    display: block;
+  }
+  .send-text .name-email {
+    display: block;
+  }
+  .send-text .name-email .your-name {
+    margin-bottom: 25px;
+  }
+  .send-text .subject {
+    width: 100%;
+  }
+  .send-text .message {
+    width: 100%;
+  }
+  .send-text button {
+    margin-left: 30px;
+  }
 }
