@@ -24,12 +24,18 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;0,800;1,100;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300;1,400;1,700&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="nav-bar">
       <div class="logo">
         <!-- <img src="./images/logo.PNG" alt=""> -->
-        <p><a href="#home"> Happy.</a></p>
+        <p><a href="index.html"> Happy.</a></p>
       </div>
       <div>
         <ul class="nav-list">
@@ -43,50 +49,88 @@
       </div>
     </div>
     <div class="container">
-        <div class="contact" id="contact">
-            <div class="word-five">
-              <h1 class="par-five">CONTACT ME</h1>
-              <h3 class="para-five">CONTACT ME</h3>
-            </div>
-            <div class="test">
-            <div class="address-section">
+      <div class="contact" id="contact">
+        <div class="word-five">
+          <h1 class="par-five">CONTACT ME</h1>
+          <h3 class="para-five">CONTACT ME</h3>
+        </div>
+        <div class="test">
+          <div class="address-section">
             <div class="address">
-             <p></p><span><i class='bx bx-map' style='color:#ffa500'  ></i></span>
-             <b>&nbsp My Address</b> <br>&nbsp &nbsp &nbsp &nbsp &nbsp Muhanga</p>
+              <p>
+                <span><i class="bx bx-map" style="color: #ffa500"></i></span>
+                <b>&nbsp My Address</b> <br /><span class="left"> Kigali</span>
+              </p>
             </div>
             <div class="address">
-              <p></p><span><i class='bx bx-envelope' style='color:#fda401'  ></i></span>
-              <b>&nbsp Email Me</b> <br>&nbsp &nbsp &nbsp &nbsp &nbsp gikundirohappy@gmail.com</p>
-            </div></div>
-            <div class="call">
-            <div class="address" >
-              <p></p><span><i class='bx bx-share-alt' style='color:#fba302'  ></i></span>
-              <b>&nbsp Social Profiles</b></p>
-              &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-              <div id="social"><span class=""><i class='bx bxl-twitter' style='color:#989796'  ></i></span>
-              <span class=""><i class='bx bxl-facebook-circle' style='color:#9e9d9c'  ></i></span>
-              <span class=""><i class='bx bxl-instagram' style='color:#a2a1a0'  ></i></span>
-              <span class=""><i class='bx bxl-linkedin-square' style='color:#a0a0a0'  ></i></span>
+              <p>
+                <span
+                  ><i class="bx bx-envelope" style="color: #fda401"></i
+                ></span>
+                <b>&nbsp Email Me</b> <br /><span class="left">
+                  gikundirohappy@gmail.com</span
+                >
+              </p>
+            </div>
+          </div>
+          <div class="call">
+            <div class="address">
+              <p>
+                <span
+                  ><i class="bx bx-share-alt" style="color: #fba302"></i
+                ></span>
+                <b>&nbsp Social Profiles</b>
+              </p>
+
+              <div id="social">
+                <span class=""
+                  ><i class="bx bxl-twitter" style="color: #989796"></i
+                ></span>
+                <span class=""
+                  ><i class="bx bxl-facebook-circle" style="color: #9e9d9c"></i
+                ></span>
+                <span class=""
+                  ><i class="bx bxl-instagram" style="color: #a2a1a0"></i
+                ></span>
+                <span class=""
+                  ><i class="bx bxl-linkedin-square" style="color: #a0a0a0"></i
+                ></span>
               </div>
             </div>
             <div class="address">
-             <p></p> <span><i class='bx bx-phone-call' style='color:#fba404'  ></i></span>
-              <b> Call Me</b> <br>&nbsp &nbsp &nbsp &nbsp (+250)788263772</p>
-             </div>
+              <p>
+                <span
+                  ><i class="bx bx-phone-call" style="color: #fba404"></i
+                ></span>
+                <b> Call Me</b> <br /><span class="left">(+250)788263772</span>
+              </p>
             </div>
           </div>
-          <div class="send-text">
-           <div class="name-email">
-           <input type="text" placeholder="Your name" class="your-name">
-           <input type="text" placeholder="Your email" class="your-email"><br></div>
-           <input type="text" placeholder="Subject" class="subject"><br>
-           <textarea name="" id="" cols="30" rows="10" placeholder="Message" class="message"></textarea><br>
-           <button>Send Message</button>
+        </div>
+        <div class="send-text">
+          <div class="name-email">
+            <input type="text" placeholder="Your name" class="your-name" />
+            <input
+              type="text"
+              placeholder="Your email"
+              class="your-email"
+            /><br />
           </div>
-          </div>
+          <input type="text" placeholder="Subject" class="subject" /><br />
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Message"
+            class="message"
+          ></textarea
+          ><br />
+          <button>Send Message</button>
+        </div>
+      </div>
     </div>
     <footer>
-      
       <p>Let's connect</p>
       <ul class="social-icons">
         <li>
@@ -125,5 +169,6 @@
           ><i class="bx bx-up-arrow-alt" style="color: #ffffff"></i></span
       ></a>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

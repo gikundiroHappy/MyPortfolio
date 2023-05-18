@@ -2,12 +2,12 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "poppins", sans-serif;
 }
 body {
   font-size: 1.2rem;
   color: black;
   background-color: rgb(241, 238, 238);
-  font-family: " Arial, sans-serif";
 }
 
 /* My home page section */
@@ -22,22 +22,93 @@ body {
   opacity: 0.9;
   padding: 15rem 0rem 0rem 10rem;
   line-height: 1.5rem;
+  padding-left: 207px;
 }
 .name h3 {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 18px;
 }
-.name h3::after {
+/* .name h3::after {
   content: "";
-  width: 20%;
+  width: 17%;
   height: 2px;
   display: block;
   position: relative;
   background-color: orange;
   bottom: 0px;
   margin-left: 220px;
+} */
+.animated-text span {
+  position: relative;
+}
+.animated-text span::before {
+  content: "UI/UX Designer";
+  color: orange;
+  animation: words 20s infinite;
+}
+.animated-text span::after {
+  content: "";
+  position: absolute;
+  border-left: 2px solid orange;
+  right: -8px;
+  background-color: white;
+  height: 100%;
+  width: calc(100% + 8px);
+  animation: cursor, 6s infinite, typing 20s steps(14) infinite;
+}
+@keyframes cursor {
+  to {
+    border-left: 2px solid orange;
+  }
+}
+@keyframes words {
+  0%,
+  20% {
+    content: "Web developer";
+  }
+  21%,
+  40% {
+    content: "UI/UX Desgner";
+  }
+  41%,
+  60% {
+    content: "Web developer";
+  }
+  61%,
+  80% {
+    content: "UI/UX Desgner";
+  }
+  /* 81%,
+  100% {
+    content: "web";
+  } */
+}
+@keyframes typing {
+  10%,
+  15%,
+  30%,
+  35%,
+  50%,
+  55%,
+  70%,
+  75%,
+  90%,
+  95% {
+    width: 0;
+  }
+  5%,
+  20%,
+  25%,
+  40%,
+  45%,
+  68%,
+  65%,
+  80%,
+  85% {
+    width: calc(100% + 8px);
+  }
 }
 .name p {
-  font-size: 23px;
+  font-size: 17px;
 }
 .icons-ic {
   margin: 0.3rem;
@@ -48,31 +119,30 @@ body {
   border-radius: 50%;
   text-align: center;
   display: inline-block;
-  padding-top: 0.5rem;
+  padding-top: 0.6rem;
   height: 2.5rem;
   width: 2.5rem;
-  font-size: 1.6rem;
+  font-size: 20px;
 }
 .icons-ic i:hover {
   background: orange;
 }
 .name h3 {
   font-weight: bold;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .nav-bar {
   padding-bottom: 1rem;
   position: fixed;
-  background-color: rgb(147, 146, 146);
   width: 100%;
   height: 9vh;
   z-index: 999;
   padding-right: 90px;
   padding-left: 25px;
-  font-weight: bold;
-  font-family: "Roboto", sans-serif;
   display: flex;
   justify-content: space-between;
+}
+.nav-bar.scrolled {
+  background-color: rgb(147, 146, 146);
 }
 .logo p {
   margin-top: 16px;
@@ -97,12 +167,17 @@ body {
 .nav-bar .nav-list .nav-link a:link,
 .nav-bar .nav-list .nav-link a:visited {
   text-decoration: none;
-  color: white;
-  font-size: 0.75rem;
-  font-family: "Roboto", sans-serif;
+  color: black;
+  font-size: 14px;
 }
 .nav-bar .nav-list .nav-link a:hover,
 .nav-bar .nav-list .nav-link a:active {
+  color: orange;
+}
+.nav-bar.scrolled .nav-list .nav-link a {
+  color: white;
+}
+.nav-bar.scrolled .nav-list .nav-link a:hover {
   color: orange;
 }
 .nav {
@@ -132,7 +207,7 @@ body {
 .word .para {
   position: absolute;
   color: rgb(78, 78, 78);
-  margin-top: -3rem;
+  margin-top: -4.5rem;
   padding-left: 30rem;
   font-size: 3rem;
 }
@@ -152,11 +227,13 @@ body {
   display: flex;
   padding-top: 1rem;
   gap: 10rem;
+  font-size: 16px;
 }
 .key {
   display: flex;
   padding-top: 3rem;
   gap: 12rem;
+  font-size: 16px;
 }
 .fact {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -242,7 +319,7 @@ body {
 .word-two .para-two {
   position: absolute;
   color: rgb(78, 78, 78);
-  margin-top: -3rem;
+  margin-top: -4.5rem;
   padding-left: 28rem;
   font-size: 3rem;
 }
@@ -254,17 +331,15 @@ body {
 }
 
 .education-section h1 {
-  font-family: "Roboto", sans-serif;
   font-size: 2rem;
   margin-bottom: 2rem;
 }
 .education-section .level {
-  font-family: "Roboto", sans-serif;
   font-size: 1.3rem;
   color: orange;
 }
 .education-section p {
-  font-size: 1.3rem;
+  font-size: 17px;
 }
 .circle-1 {
   border-radius: 50%;
@@ -306,7 +381,7 @@ body {
 }
 .experience-section p,
 ul li {
-  font-size: 1.3rem;
+  font-size: 17px;
 }
 
 /* My service Section */
@@ -326,7 +401,7 @@ ul li {
 .word-three .para-three {
   position: absolute;
   color: rgb(78, 78, 78);
-  margin-top: -3rem;
+  margin-top: -4.5rem;
   padding-left: 26rem;
   font-size: 3rem;
 }
@@ -340,16 +415,13 @@ ul li {
 }
 .card-one {
   padding: 30px;
-  /* position: relative; */
-  /* overflow: hidden; */
   background: #fff;
   box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
-  /* transition: all 0.3s ease-in-out; */
   text-align: center;
   border: 1px solid #fff;
 }
 .card-one p {
-  font-size: 1.2rem;
+  font-size: 17px;
   line-height: 1.5rem;
 }
 .card-one .icons {
@@ -394,7 +466,7 @@ ul li {
 .word-four .para-four {
   position: absolute;
   color: rgb(78, 78, 78);
-  margin-top: -3rem;
+  margin-top: -4.5rem;
   padding-left: 25rem;
   font-size: 3rem;
 }
@@ -428,7 +500,7 @@ ul li {
   font-size: 30px;
   font-family: mv boli;
   opacity: 0;
-  padding-left: 120px;
+  padding-left: 80px;
   color: orange;
   padding-top: 20px;
   transition: 0.3s;
@@ -438,7 +510,7 @@ ul li {
 }
 .image-cards .apps-box .apps p {
   position: absolute;
-  font-size: 20px;
+  font-size: 17px;
   opacity: 0;
   padding-left: 50px;
   color: white;
@@ -468,7 +540,7 @@ ul li {
 .word-five .para-five {
   position: absolute;
   color: rgb(78, 78, 78);
-  margin-top: -3rem;
+  margin-top: -4.5rem;
   padding-left: 27rem;
   font-size: 3rem;
 }
@@ -476,6 +548,7 @@ ul li {
   display: flex;
   justify-content: space-between;
   margin-top: 3rem;
+  font-size: 15px;
 }
 .address {
   background-color: white;
@@ -494,8 +567,11 @@ ul li {
   border-radius: 50%;
   font-size: 1.5rem;
 }
+.left {
+  margin-left: 50px;
+}
 #social {
-  margin-top: -1.5rem;
+  margin-top: 2px;
   margin-left: 3.5rem;
 }
 #social i {
@@ -523,7 +599,7 @@ ul li {
 .your-name {
   padding: 0.6rem;
   background-color: white;
-  font-size: 1.2rem;
+  font-size: 14px;
   border: 1px solid rgb(182, 181, 181);
   outline: none;
 }
@@ -531,7 +607,7 @@ ul li {
   padding: 0.6rem;
   background-color: white;
   border: none;
-  font-size: 1.2rem;
+  font-size: 14px;
   border: 1px solid rgb(182, 181, 181);
   outline: none;
 }
@@ -539,7 +615,7 @@ ul li {
   padding: 0.6rem;
   width: 67rem;
   margin: 1rem;
-  font-size: 1.2rem;
+  font-size: 14px;
   background-color: white;
   border: none;
   border: 1px solid rgb(182, 181, 181);
@@ -549,7 +625,7 @@ ul li {
   margin: 1rem;
   padding: 0.6rem;
   color: black;
-  font-size: 1.2rem;
+  font-size: 14px;
   background-color: white;
   border: none;
   border: 1px solid rgb(182, 181, 181);
@@ -599,7 +675,7 @@ footer {
 }
 footer p {
   text-align: center;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: bold;
   margin-bottom: 10px;
 }
@@ -614,7 +690,7 @@ footer .social-icons li {
   list-style: none;
 }
 footer .social-icons li a span i {
-  font-size: 20px;
+  font-size: 16px;
   color: white;
   margin: 0 10px;
   display: inline-block;
@@ -629,7 +705,6 @@ footer .social-icons li a :hover {
 footer a .fresh i {
   background-color: orange;
   position: absolute;
-  /* border-radius: 50%; */
   margin-left: 1200px;
   margin-top: -60px;
   border-radius: 50%;
@@ -646,16 +721,35 @@ footer .copyright {
   .nav-bar {
     display: block;
   }
+  /* .check span i {
+    font-size: 60px;
+    float: right;
+    margin-top: -30px;
+    cursor: pointer;
+  } */
   .nav-bar .logo {
     text-align: center;
   }
   .nav-bar .nav-list {
     display: flex;
-    padding-left: 0;
+    /* display: block; */
+    /* padding-left: 0;
+
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    left: -100%;
+    transition: all 0.5s;
+    margin-top: 48px; */
   }
+
   .nav-bar .nav-list .nav-link a:link,
   .nav-bar .nav-list .nav-link a:visited {
     font-size: 20px;
+    /* text-transform: lowercase; */
   }
   .content {
     width: 100%;
